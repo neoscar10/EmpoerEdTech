@@ -1,4 +1,10 @@
-<div class="container volunteer-form">
+<style>
+    .header{
+        background-color: #1e4356;;
+    }
+</style>
+
+<div class="container volunteer-form pt-5">
     @if (session()->has('success'))
         <div class="alert alert-success">
             {{ session('success') }}
@@ -7,7 +13,7 @@
 
     <div class="card shadow mx-auto" style="max-width: 600px;">
         <div class="card-header text-white text-center" style="background-color: #68a4c4;">
-            <h4 class="mb-0">Become a Volunteer</h4>
+            <h4 class="mb-0 text-white">Become a Volunteer</h4>
         </div>
         <div class="card-body">
             <form wire:submit.prevent="submit">

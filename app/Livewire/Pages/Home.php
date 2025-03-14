@@ -3,11 +3,13 @@
 namespace App\Livewire\Pages;
 
 use Livewire\Component;
+use App\Models\Project;
 
 class Home extends Component
 {
     public function render()
     {
-        return view('livewire.pages.home');
+        $projects = Project::all();
+        return view('livewire.pages.home', compact('projects'));
     }
 }

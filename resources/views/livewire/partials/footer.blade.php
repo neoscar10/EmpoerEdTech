@@ -22,7 +22,7 @@
         <div class="container footer-top">
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6 footer-about">
-              <a href="index.html" class="d-flex align-items-center">
+              <a href="#" class="d-flex align-items-center">
                 <span class="sitename">EmpowerEdTech</span>
               </a>
               <div class="footer-contact pt-3">
@@ -57,7 +57,7 @@
               <p>Stay updated with on all of our programs by following us on our social media handles</p>
               <div class="social-links d-flex">
                 <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com/share/168SPp24JK/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
               </div>

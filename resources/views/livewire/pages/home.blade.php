@@ -18,24 +18,24 @@
 
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2>Welcome to Moderna</h2>
-          <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <h2>The Mission</h2>
+          <p>To empower marginalized communities through access to education, technology, and environmental awareness.</p>
           <a href="url{{url('/donation')}}" wire:navigate class="btn-get-started">Donate <i class="fa-solid fa-heart"></i></a>
         </div>
       </div><!-- End Carousel Item -->
 
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2>Lorem Ipsum Dolor</h2>
-          <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <h2>The Vission</h2>
+          <p>We envision a world where everyone has the tools, skills, and confidence to thrive in an increasingly digital and interconnected world.</p>
           <a href="url{{url('/donation')}}" wire:navigate class="btn-get-started">Donate <i class="fa-solid fa-heart"></i></a>
         </div>
       </div><!-- End Carousel Item -->
 
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2>Sequi ea ut et est quaerat</h2>
-          <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <h2>Why We Matter</h2>
+          <p>EmpowerEdTech Innovations Foundation integrates education, technology, and sustainability to empower individuals and build resilient communities.</p>
           <a href="url{{url('/donation')}}" wire:navigate class="btn-get-started">Donate <i class="fa-solid fa-heart"></i></a>
         </div>
       </div><!-- End Carousel Item -->
@@ -148,92 +148,46 @@
     
         <!-- Projects Section -->
         <section id="features" class="features section">
-          <!-- Section Title -->
           <div class="container section-title" data-aos="fade-up">
-            <h2>Projects Coming Up</h2>
-            <p class="px-5">
-              Explore EmpowerEdTech Innovations Foundation's impactful projects, including the Digital Empowerment Academy, Green Futures Initiative, and Essential Support Programs.
-            </p>
+              <h2>Our Projects</h2>
+              <p class="px-5">
+                  Explore EmpowerEdTech Innovations Foundation's impactful projects.
+              </p>
           </div>
-    
+      
           <div class="container">
-            <div class="row gy-4 align-items-center features-item">
-              <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-                <div class="image-container">
-                  <img src="assets/img/charity3.jpg" class="img-fluid" alt="Project Image">
-                </div>
-              </div>
-              <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
-                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check"></i><span> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  <li><i class="bi bi-check"></i><span> Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                  <li><i class="bi bi-check"></i><span> Ullam est qui quos consequatur eos accusamus.</span></li>
-                </ul>
-              </div>
-            </div>
-    
-            <div class="row gy-4 align-items-center features-item">
-              <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-                <div class="image-container">
-                  <img src="assets/img/charity2.jpg" class="img-fluid" alt="Project Image">
-                </div>
-              </div>
-              <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
-                <h3>Corporis temporibus maiores provident</h3>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </div>
-    
-            <div class="row gy-4 align-items-center features-item">
-              <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
-                <div class="image-container">
-                  <img src="assets/img/charity.jpg" class="img-fluid" alt="Project Image">
-                </div>
-              </div>
-              <div class="col-md-7" data-aos="fade-up">
-                <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-                <p>
-                  Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check"></i><span> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  <li><i class="bi bi-check"></i><span> Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                  <li><i class="bi bi-check"></i><span> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</span></li>
-                </ul>
-              </div>
-            </div>
-    
-            <div class="row gy-4 align-items-center features-item">
-              <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
-                <div class="image-container">
-                  <img src="assets/img/charity2.jpg" class="img-fluid" alt="Project Image">
-                </div>
-              </div>
-              <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
-                <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </div>
+              @foreach($projects as $index => $project)
+                  <div class="row gy-4 align-items-center features-item">
+                      @if($index % 2 == 0)
+                          <!-- Image on the Left, Text on the Right -->
+                          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+                              <div class="image-container">
+                                  <img src="{{ asset('storage/'.$project->image) }}" class="img-fluid" alt="Project Image">
+                              </div>
+                          </div>
+                          <div class="col-md-7" data-aos="fade-up">
+                              <h3>{{ $project->title }}</h3>
+                              <p><small>Posted on {{$project->created_at->format('d M, Y')}}</small></p>
+                              <p class="fst-italic">{{ $project->description }}</p>
+                          </div>
+                      @else
+                          <!-- Image on the Right, Text on the Left -->
+                          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+                              <div class="image-container">
+                                  <img src="{{ asset('storage/'.$project->image) }}" class="img-fluid" alt="Project Image">
+                              </div>
+                          </div>
+                          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+                              <h3>{{ $project->title }}</h3>
+                              <p><small>Posted on {{$project->created_at->format('d M, Y')}}</small></p>
+                              <p class="fst-italic">{{ $project->description }}</p>
+                          </div>
+                      @endif
+                  </div>
+              @endforeach
           </div>
-        </section>
+      </section>
+      
     
       </main>
 </div>

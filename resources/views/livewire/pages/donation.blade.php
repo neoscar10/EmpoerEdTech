@@ -1,9 +1,15 @@
-    <div class="donation-form-container py-5">
+   <style>
+    .header{
+        background-color: #1e4356;;
+    }
+   </style>
+   
+   <div class="donation-form-container py-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card shadow-lg">
                     <div class="card-header text-white text-center form-header">
-                        <h4>Make a Donation</h4>
+                        <h4 class="text-white">Make a Donation</h4>
                     </div>
                     <div class="card-body">
                         @if(session()->has('success'))
@@ -26,7 +32,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Donation Amount (₦)</label>
+                                <label class="form-label">Donation Amount ($)</label>
                                 <input type="number" class="form-control" wire:model="amount" placeholder="Enter amount">
                                 @error('amount') <span class="text-danger">{{ $message }}</span> @enderror
                             </div>

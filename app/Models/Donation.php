@@ -6,6 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Donation extends Model
 {
-    protected $fillable = ['name', 'email', 'amount',];
+    protected $fillable = [
+        'name',
+        'email',
+        'amount',
+        'payment_method',
+        'transaction_id',
+        'payment_status',
+    ];
 }
 

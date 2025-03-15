@@ -1,9 +1,4 @@
 
-<style>
-    .header{
-        background-color: #1e4356;;
-    }
-</style>
     <div class="container py-5 about-page mt-5">
     <div class="text-center mb-5">
         <h2 class="fw-bold pt-5">Biography of EmpowerEdTech Innovations Foundation</h2>

@@ -112,7 +112,7 @@
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
             <div class="image-container position-relative">
               <img src="assets/img/hero_image_1.jpg" class="img-fluid w-100" alt="About Us">
-              <a href="https://www.youtube.com/watch?v=FLEkwtCoWV8" class="glightbox pulsating-play-btn"></a>
+              <a href="#" class="glightbox pulsating-play-btn"></a>
     
               <!-- Overlay Stats Card -->
               <div class="stats-card">

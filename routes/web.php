@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProfileController;
 use App\Livewire\Admin\AddProject;
 use App\Livewire\Admin\Dashboard;
@@ -12,18 +11,32 @@ use App\Livewire\Pages\About;
 use App\Livewire\Pages\Donation;
 use App\Livewire\Pages\Gallery;
 use App\Livewire\Pages\Home;
-use App\Livewire\Pages\Partner;
 use App\Livewire\Pages\RegisterPartner;
+use App\Livewire\Pages\SuccessPage;
 use App\Livewire\Pages\VolunteerForm;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', Home::class)->name('home');
-Route::get('/about', About::class)->name('about');
-Route::get('gallery', Gallery::class)->name('gallery');
-Route::get('/donation', Donation::class)->name('donation');
-Route::get('/partner', RegisterPartner::class)->name('partner');
-Route::get('volunteer', VolunteerForm::class)->name('volunteer');
+use App\Livewire\TestForm;
+Route::get('/test-form', TestForm::class);
+
+
+
+Route::middleware('web')->group(function () {
+    Route::get('/', Home::class)->name('home');
+    Route::get('/about', About::class)->name('about');
+    Route::get('gallery', Gallery::class)->name('gallery');
+    Route::get('/donation', Donation::class)->name('donation');
+    Route::get('/partner', RegisterPartner::class)->name('partner');
+    Route::get('volunteer', VolunteerForm::class)->name('volunteer');
+});
+
+
+//Stripe
+Route::get('/donation/success', SuccessPage::class)->name('donation.success');
+Route::get('/donation/cancel', Donation::class)->name('donation.cancel');
+
+
 
 // Admin Routes
 Route::middleware(['auth', 'admin'])->group(function () {

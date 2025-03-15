@@ -4,10 +4,10 @@ namespace App\Livewire\Pages;
 
 use Livewire\Component;
 
-class Partner extends Component
+class MakeDonation extends Component
 {
     public function render()
     {
-        return view('livewire.pages.partner');
+        return view('livewire.pages.make-donation');
     }
 }

@@ -1,8 +1,4 @@
-<style>
-    .header{
-        background-color: #1e4356;;
-    }
-</style>
+
 
 <div class="container d-flex justify-content-center align-items-center my-5" style="min-height: 100vh; padding-top: 100px;">
     <div class="col-md-8 col-lg-6">

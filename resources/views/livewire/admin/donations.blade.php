@@ -17,6 +17,7 @@
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Amount Donated</th>
+                                    <th>Payment Status</th>
                                     <th>Date</th>
                                 </tr>
                             </thead>
@@ -27,6 +28,7 @@
                                         <td>{{ $donor->name }}</td>
                                         <td>{{ $donor->email }}</td>
                                         <td>${{ number_format($donor->amount, 2) }}</td>
+                                        <td>{{$donor->payment_status}}</td>
                                         <td>{{ $donor->created_at->format('d M, Y') }}</td>
                                     </tr>
                                 @empty

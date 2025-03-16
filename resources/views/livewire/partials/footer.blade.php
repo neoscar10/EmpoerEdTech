@@ -59,7 +59,7 @@
                 <a href=""><i class="bi bi-twitter-x"></i></a>
                 <a href="https://www.facebook.com/share/168SPp24JK/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                {{-- <a href=""><i class="bi bi-linkedin"></i></a> --}}
               </div>
             </div>
     

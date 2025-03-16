@@ -26,7 +26,7 @@
 
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2>The Vission</h2>
+          <h2>The Vision</h2>
           <p>We envision a world where everyone has the tools, skills, and confidence to thrive in an increasingly digital and interconnected world.</p>
           <a href="url{{url('/donation')}}" wire:navigate class="btn-get-started">Donate <i class="fa-solid fa-heart"></i></a>
         </div>

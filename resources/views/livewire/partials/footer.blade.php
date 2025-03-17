@@ -39,7 +39,7 @@
                 <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
                 <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
                 <li><i class="bi bi-chevron-right"></i> <a href="#">Partnership</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">Gallery</a></li>
+                {{-- <li><i class="bi bi-chevron-right"></i> <a href="#">Gallery</a></li> --}}
               </ul>
             </div>
     

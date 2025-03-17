@@ -15,7 +15,7 @@ class AddProject extends Component
     protected $rules = [
         'title' => 'required|string|max:255',
         'description' => 'required|string',
-        'image' => 'nullable|image|max:5120', // Max 2MB image
+        'image' => 'nullable|image|max:1020', // Max 2MB image
         'key_points' => 'nullable|array',
         'key_points.*' => 'string|max:255'
     ];

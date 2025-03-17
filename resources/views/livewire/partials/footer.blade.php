@@ -37,8 +37,9 @@
               <h4>Useful Links</h4>
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">Partnership</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="{{url('/about')}}" wire:navigate>About us</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="{{url('/partner')}}" wire:navigate>Partnership</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="{{url('/volunteer')}}" wire:navigate>Volunteer</a></li>
                 {{-- <li><i class="bi bi-chevron-right"></i> <a href="#">Gallery</a></li> --}}
               </ul>
             </div>

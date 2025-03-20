@@ -1,24 +1,45 @@
 
 
 //Js for card counter
-  document.addEventListener("DOMContentLoaded", function () {
-      const counters = document.querySelectorAll(".counter");
-      counters.forEach((counter) => {
-          const updateCount = () => {
-              const target = +counter.getAttribute("data-target");
-              const count = +counter.innerText;
-              const increment = target / 200; // Adjust speed
-              if (count < target) {
-                  counter.innerText = Math.ceil(count + increment);
-                  setTimeout(updateCount, 40);
-              } else {
-                  counter.innerText = target;
-              }
-          };
-          updateCount();
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll(".counter");
+  let started = false; // Ensures the animation runs only once
+
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting && !started) {
+              started = true; // Prevent multiple triggers
+              
+              counters.forEach((counter) => {
+                  counter.innerText = "0"; // Reset to 0 before starting
+
+                  const updateCount = () => {
+                      const target = +counter.getAttribute("data-target");
+                      const count = +counter.innerText;
+                      const increment = Math.ceil(target / 100); // Adjust speed
+
+                      if (count < target) {
+                          counter.innerText = count + increment;
+                          setTimeout(updateCount, 20);
+                      } else {
+                          counter.innerText = target;
+                      }
+                  };
+
+                  updateCount();
+              });
+
+              observer.disconnect(); // Stop observing once triggered
+          }
       });
-  });
-  
+  }, { threshold: 0.6 }); // Adjust threshold (60% visibility before triggering)
+
+  // Observe the stats section inside the About section
+  const statsSection = document.querySelector(".stats-card");
+  if (statsSection) {
+      observer.observe(statsSection);
+  }
+});
 
 // session message
 document.addEventListener("DOMContentLoaded", function () {

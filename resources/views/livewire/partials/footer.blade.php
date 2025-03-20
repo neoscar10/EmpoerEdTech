@@ -47,7 +47,7 @@
             <div class="col-lg-2 col-md-3 footer-links">
               <h4>Our Goals</h4>
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <a href="{{route('digitalEmpoerment')}}">Digital Empowerment</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="{{route('digitalEmpowerment')}}">Digital Empowerment</a></li>
                 <li><i class="bi bi-chevron-right"></i> <a href="{{route('environmentalSustainability')}}">Environmental Sustainability</a></li>
                 <li><i class="bi bi-chevron-right"></i> <a href="{{route('essentialSupport')}}">Essential Support</a></li>
               </ul>

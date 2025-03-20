@@ -5,10 +5,10 @@
           const updateCount = () => {
               const target = +counter.getAttribute("data-target");
               const count = +counter.innerText;
-              const increment = target / 500; // Adjust speed
+              const increment = target / 200; // Adjust speed
               if (count < target) {
                   counter.innerText = Math.ceil(count + increment);
-                  setTimeout(updateCount, 100);
+                  setTimeout(updateCount, 40);
               } else {
                   counter.innerText = target;
               }

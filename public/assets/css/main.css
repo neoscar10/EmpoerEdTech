@@ -1,7 +1,38 @@
 /* custom */
-.about-page {
- 
+.donate-btn {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  line-height: 1;
+  margin: 10px;
+  color: var(--default-color);
+  border: 2px solid var(--accent-color);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  /* Removed transition to avoid conflict */
+  animation: pulsate-donate 1.5s infinite ease-in-out;
 }
+
+@keyframes pulsate-donate {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.15); /* Increased effect slightly */
+      opacity: 0.8;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
 
 .hero-bg {
   filter: brightness(40%);

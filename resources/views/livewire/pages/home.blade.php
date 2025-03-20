@@ -83,7 +83,9 @@
                   </div>
                   <h3>Donate</h3>
                   <p>Join us in making a difference. Explore opportunities to contribute your time and skills for a better world.</p>
-                  <a href="url{{url('/donation')}}" wire:navigate class="custom-btn mt-3">Donate Now</a>
+                  <a href="{{ url('/donation') }}" wire:navigate class="mt-3 donate-btn">
+                    Donate Now
+                </a>
                 </div>
               </div>
     
@@ -117,14 +119,15 @@
               <!-- Overlay Stats Card -->
               <div class="stats-card">
                 <div class="stats-item">
-                  <h4>300+</h4>
-                  <p>Trained in Digital Skills</p>
+                    <h4 class="counter" data-target="300">0</h4>
+                    <p>Trained in Digital Skills</p>
                 </div>
                 <div class="stats-item">
-                  <h4>1000+</h4>
-                  <p>Families Supported</p>
+                    <h4 class="counter" data-target="1000">0</h4>
+                    <p>Families Supported</p>
                 </div>
-              </div>
+            </div>
+            {{-- JS for counter bellow --}}
             </div>
           </div>
     
@@ -191,3 +194,5 @@
     
       </main>
 </div>
+
+

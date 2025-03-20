@@ -8,7 +8,10 @@ use App\Livewire\Admin\Projects;
 use App\Livewire\Admin\ViewPartners;
 use App\Livewire\Admin\Volunteers;
 use App\Livewire\Pages\About;
+use App\Livewire\Pages\DigitalEmpowerment;
 use App\Livewire\Pages\Donation;
+use App\Livewire\Pages\EnvironmentalSustainability;
+use App\Livewire\Pages\EssentialSupport;
 use App\Livewire\Pages\Gallery;
 use App\Livewire\Pages\Home;
 use App\Livewire\Pages\RegisterPartner;
@@ -29,6 +32,9 @@ Route::middleware('web')->group(function () {
     Route::get('/donation', Donation::class)->name('donation');
     Route::get('/partner', RegisterPartner::class)->name('partner');
     Route::get('volunteer', VolunteerForm::class)->name('volunteer');
+    Route::get('/digitalEmpowerment', DigitalEmpowerment::class)->name('digitalEmpoerment');
+    Route::get('/environmentalSustainability', EnvironmentalSustainability::class)->name('environmentalSustainability');
+    Route::get('/essentialSupport', EssentialSupport::class)->name('essentialSupport');
 });
 
 

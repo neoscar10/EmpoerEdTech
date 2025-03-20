@@ -103,10 +103,8 @@
     
             </div>
           </div>
-        </section><!-- /Call to action -->
-    
-        <!-- About Section -->
-        <!-- About Section -->
+        </section>
+        <!-- /Call to action -->
     <section id="about" class="about section light-background">
       <div class="container">
         <div class="row gy-4">

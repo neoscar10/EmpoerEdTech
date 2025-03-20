@@ -1,3 +1,5 @@
+
+
 //Js for card counter
   document.addEventListener("DOMContentLoaded", function () {
       const counters = document.querySelectorAll(".counter");

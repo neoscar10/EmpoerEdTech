@@ -8,53 +8,52 @@
 
 
      <!-- Hero Section -->
-<section id="hero" class="hero section dark-background">
+     <section id="hero" class="hero section dark-background">
 
-  <img src="assets/img/hero_image_1.jpg" alt="" data-aos="fade-in" class="hero-bg">
-
-  <div id="hero-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-    <div class="container position-relative">
-
-      <div class="carousel-item active">
-        <div class="carousel-container">
-          <h2>The Mission</h2>
-          <p>To empower marginalized communities through access to education, technology, and environmental awareness.</p>
-          <a href="url{{url('/donation')}}" wire:navigate class="btn-get-started">Donate <i class="fa-solid fa-heart"></i></a>
+      <div id="hero-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+    
+        <div class="carousel-inner">
+    
+          <div class="carousel-item active" style="background-image: url('assets/img/hero_image_1.jpg');">
+            <div class="carousel-container">
+              <h2>The Mission</h2>
+              <p>To empower marginalized communities through access to education, technology, and environmental awareness.</p>
+              <a href="{{ url('/donation') }}" wire:navigate class="btn-get-started">Donate <i class="fa-solid fa-heart"></i></a>
+            </div>
+          </div>
+    
+          <div class="carousel-item" style="background-image: url('assets/img/hero_image_2.jpg');">
+            <div class="carousel-container">
+              <h2>The Vision</h2>
+              <p>We envision a world where everyone has the tools, skills, and confidence to thrive in an increasingly digital and interconnected world.</p>
+              <a href="{{ url('/donation') }}" wire:navigate class="btn-get-started">Donate <i class="fa-solid fa-heart"></i></a>
+            </div>
+          </div>
+    
+          <div class="carousel-item" style="background-image: url('assets/img/hero_image_3.jpg');">
+            <div class="carousel-container">
+              <h2>Why We Matter</h2>
+              <p>EmpowerEdTech Innovations Foundation integrates education, technology, and sustainability to empower individuals and build resilient communities.</p>
+              <a href="{{ url('/donation') }}" wire:navigate class="btn-get-started">Donate <i class="fa-solid fa-heart"></i></a>
+            </div>
+          </div>
+    
         </div>
-      </div><!-- End Carousel Item -->
-
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2>The Vision</h2>
-          <p>We envision a world where everyone has the tools, skills, and confidence to thrive in an increasingly digital and interconnected world.</p>
-          <a href="url{{url('/donation')}}" wire:navigate class="btn-get-started">Donate <i class="fa-solid fa-heart"></i></a>
-        </div>
-      </div><!-- End Carousel Item -->
-
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2>Why We Matter</h2>
-          <p>EmpowerEdTech Innovations Foundation integrates education, technology, and sustainability to empower individuals and build resilient communities.</p>
-          <a href="url{{url('/donation')}}" wire:navigate class="btn-get-started">Donate <i class="fa-solid fa-heart"></i></a>
-        </div>
-      </div><!-- End Carousel Item -->
-
-      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
-      <ol class="carousel-indicators"></ol>
-
-    </div>
-
-  </div>
-
-</section><!-- /Hero Section -->
+    
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+    
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+    
+        <ol class="carousel-indicators"></ol>
+    
+      </div>
+    
+    </section>
+    <!-- /Hero Section -->
 
     
           <!-- Call to action -->
@@ -105,6 +104,8 @@
           </div>
         </section>
         <!-- /Call to action -->
+    
+     
     <section id="about" class="about section light-background">
       <div class="container">
         <div class="row gy-4">

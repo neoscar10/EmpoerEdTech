@@ -1,5 +1,13 @@
 /* custom */
+
+/* Costom image desige for images on projects blog page */
+.custom-img {
+  width: 50%;
+  /* Adjust height if needed */
+}
+
 /* dynamic nav styling */
+
 .donate-btn {
   font-weight: 500;
   font-size: 14px;
@@ -1003,97 +1011,72 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 .hero {
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh; /* Ensure full viewport height */
   overflow: hidden;
   display: flex;
   align-items: center;
   position: relative;
   background-color: transparent;
+  padding-top: 0; /* No padding at the top */
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 130%;
-  height: 95%;
-  background: linear-gradient(to right, color-mix(in srgb, var(--background-color), transparent 90%), var(--background-color)), url("../img/hero-bg.jpg") center top no-repeat;
-  background-size: cover;
-  z-index: 0;
-  border-radius: 0 0 50% 50%;
-  transform: translateX(-50%) rotate(0deg);
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 130%;
-  height: 96%;
-  background: var(--background-color);
-  opacity: 0.3;
-  z-index: 0;
-  border-radius: 0 0 50% 50%;
-  transform: translateX(-50%) translateY(18px) rotate(2deg);
-}
-
-.hero img {
-  position: absolute;
-  inset: 0;
-  display: block;
+.hero .carousel-inner {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: 1;
 }
 
-.hero .carousel {
-  position: relative;
+.hero .carousel-item {
   width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  z-index: 3;
+  justify-content: center;
+  position: relative;
+}
+
+.hero .carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Optional: Dark overlay */
 }
 
 .hero .carousel-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  position: relative;
   text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.hero h2,
+.hero p,
+.hero .btn-get-started {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 1s ease-out forwards;
 }
 
 .hero h2 {
-  margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
-  animation: fadeInDown 1s both;
-  display: block;
+  margin-bottom: 30px;
+  animation-delay: 0.3s;
 }
 
 .hero p {
   width: 80%;
   margin: 0 auto 30px auto;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  animation: fadeInDown 1s both 0.2s;
-}
-
-.hero .carousel-control-prev,
-.hero .carousel-control-next {
-  width: 10%;
-}
-
-.hero .carousel-control-next-icon,
-.hero .carousel-control-prev-icon {
-  background: none;
-  font-size: 48px;
-  line-height: 1;
-  width: auto;
-  height: auto;
+  color: #fff;
+  animation-delay: 0.6s;
 }
 
 .hero .btn-get-started {
@@ -1106,9 +1089,9 @@ section,
   transition: 0.5s;
   line-height: 1;
   margin: 10px;
-  color: var(--default-color);
-  animation: fadeInUp 1s both 0.4s;
+  color: #fff;
   border: 2px solid var(--accent-color);
+  animation-delay: 0.9s;
 }
 
 .hero .btn-get-started:hover {
@@ -1117,8 +1100,29 @@ section,
   text-decoration: none;
 }
 
+/* Animation */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ensure animation triggers on carousel change */
+.carousel-item.active h2,
+.carousel-item.active p,
+.carousel-item.active .btn-get-started {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Move carousel indicators up */
 .hero .carousel-indicators {
-  bottom: -60px;
+  bottom: 60px; /* Adjusted so it sits just below the button */
 }
 
 .hero .carousel-indicators li {
@@ -1138,6 +1142,22 @@ section,
   background: var(--accent-color);
 }
 
+/* Navigation controls */
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+  width: 10%;
+}
+
+.hero .carousel-control-next-icon,
+.hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 48px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+}
+
+/* Responsive tweaks */
 @media (min-width: 1024px) {
   .hero p {
     width: 60%;
@@ -1156,29 +1176,6 @@ section,
   }
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
 
 /*--------------------------------------------------------------
 # Featured Services Section

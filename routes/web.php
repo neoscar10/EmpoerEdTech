@@ -14,6 +14,7 @@ use App\Livewire\Pages\EnvironmentalSustainability;
 use App\Livewire\Pages\EssentialSupport;
 use App\Livewire\Pages\Gallery;
 use App\Livewire\Pages\Home;
+use App\Livewire\Pages\ProjectsBlog;
 use App\Livewire\Pages\RegisterPartner;
 use App\Livewire\Pages\SuccessPage;
 use App\Livewire\Pages\VolunteerForm;
@@ -35,6 +36,7 @@ Route::middleware('web')->group(function () {
     Route::get('/digitalEmpowerment', DigitalEmpowerment::class)->name('digitalEmpowerment');
     Route::get('/environmentalSustainability', EnvironmentalSustainability::class)->name('environmentalSustainability');
     Route::get('/essentialSupport', EssentialSupport::class)->name('essentialSupport');
+    Route::get('/projectsBlog', ProjectsBlog::class)->name('projectsBlog');
 });
 
 

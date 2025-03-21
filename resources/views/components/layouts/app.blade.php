@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     {{-- Contitionally changing the nav bg-color --}}
-    @if ( !request()->is('home') )
+    @if (!request()->is('home') )
         <style>
             .header{
                 background-color: #1e4356;

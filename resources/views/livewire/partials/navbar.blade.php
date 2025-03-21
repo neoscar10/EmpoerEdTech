@@ -12,6 +12,7 @@
             <ul>
               <li><a href="{{url('')}}" class="active-----rename" wire:navigate>Home</a></li>
               <li><a href="{{url('/about')}}" wire:navigate>About</a></li>
+              <li><a href="{{url('/projectsBlog')}}" wire:navigate>Projects</a></li>
               <li class="dropdown"><a href="#"><span>Our Goals</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="{{url('/digitalEmpowerment')}}" wire:navigate>Digital Empowerment</a></li>

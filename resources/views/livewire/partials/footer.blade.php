@@ -26,10 +26,11 @@
                 <span class="sitename">EmpowerEdTech</span>
               </a>
               <div class="footer-contact pt-3">
-                <p>A108 Bafajo Road</p>
-                <p>Yelwa, SK 535022</p>
-                <p class="mt-3"><strong>Phone:</strong> <span>+1 2345 6789</span></p>
-                <p><strong>Email:</strong> <span>neoscar@tech.com</span></p>
+                <p>1-2 Waverley Terrace
+                </p>
+                <p> SR4 6TA</p>
+                <p class="mt-3"><strong>Phone:</strong> <span>+447990929848</span></p>
+                <p><strong>Email:</strong> <span>info@empoweredtechinnovations.org</span></p>
               </div>
             </div>
     

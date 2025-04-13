@@ -16,7 +16,7 @@
 
 
               <li class="dropdown">
-          <div class="dropdown-toggle trigger-dropdown d-flex align-items-center">
+          <div class="dropdown-toggle trigger-dropdown d-flex align-items-center" style="color: white">
             <span>Our Goals</span> <i class="bi bi-chevron-down ms-1"></i>
           </div>
           <ul>
@@ -27,8 +27,8 @@
         </li>
 
         <li class="dropdown">
-          <div class="dropdown-toggle trigger-dropdown">
-            <span>Make a Move</span> <i class="bi bi-chevron-down"></i>
+          <div class="dropdown-toggle trigger-dropdown" style="color: white">
+            <span >Make a Move</span> <i class="bi bi-chevron-down"></i>
           </div>
           <ul>
             <li><a href="{{url('/donation')}}" wire:navigate>Donate</a></li>

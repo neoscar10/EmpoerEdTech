@@ -94,14 +94,19 @@ document.addEventListener("DOMContentLoaded", function () {
   /**
    * Toggle mobile nav dropdowns
    */
-  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+  document.querySelectorAll('.navmenu .trigger-dropdown').forEach(trigger => {
+    trigger.addEventListener('click', function (e) {
       e.preventDefault();
-      this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-      e.stopImmediatePropagation();
+      e.stopPropagation();
+  
+      const parentLi = this.closest('li.dropdown');
+      const dropdownMenu = parentLi.querySelector('ul');
+  
+      parentLi.classList.toggle('active');
+      dropdownMenu.classList.toggle('dropdown-active');
     });
   });
+  
 
   /**
    * Preloader

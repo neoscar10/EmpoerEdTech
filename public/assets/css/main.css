@@ -662,6 +662,57 @@ h6 {
   }
 }
 
+
+
+
+.navmenu .dropdown > .trigger-dropdown::after {
+  content: none !important;
+}
+
+
+
+
+
+.navmenu .trigger-dropdown {
+  color: var(--nav-dropdown-color);
+  padding: 10px 20px;
+  font-family: var(--nav-font);
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navmenu .trigger-dropdown i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+}
+
+.navmenu .trigger-dropdown:hover,
+.navmenu .trigger-dropdown.active {
+  color: var(--nav-dropdown-hover-color);
+}
+
+.navmenu .trigger-dropdown:hover i,
+.navmenu .trigger-dropdown.active i {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  transform: rotate(180deg);
+}
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/

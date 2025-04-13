@@ -13,24 +13,29 @@
               <li><a href="{{url('')}}" class="active-----rename" wire:navigate>Home</a></li>
               <li><a href="{{url('/about')}}" wire:navigate>About</a></li>
               <li><a href="{{url('/projectsBlog')}}" wire:navigate>Projects</a></li>
-              <li class="dropdown"><a href="#"><span>Our Goals</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="{{url('/digitalEmpowerment')}}" wire:navigate>Digital Empowerment</a></li>
-                  <li><a href="{{url('/environmentalSustainability')}}" wire:navigate>Environmental Sustainability</a></li>
-                  <li><a href="{{url('/essentialSupport')}}" wire:navigate>Essential Support</a></li>
-                  
-                </ul>
-              </li>
 
-              <li class="dropdown"><a href="#"><span>Make a Move</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="{{url('/donation')}}" wire:navigate>Donate</a></li>
-                  <li><a href="{{url('/volunteer')}}" wire:navigate>Volunteer</a></li>
-                  <li><a href="{{url('/partner')}}" wire:navigate>Partner</a></li>
-                </ul>
-              </li>
 
-              
+              <li class="dropdown">
+          <div class="dropdown-toggle trigger-dropdown d-flex align-items-center">
+            <span>Our Goals</span> <i class="bi bi-chevron-down ms-1"></i>
+          </div>
+          <ul>
+            <li><a href="{{url('/digitalEmpowerment')}}" wire:navigate>Digital Empowerment</a></li>
+            <li><a href="{{url('/environmentalSustainability')}}" wire:navigate>Environmental Sustainability</a></li>
+            <li><a href="{{url('/essentialSupport')}}" wire:navigate>Essential Support</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <div class="dropdown-toggle trigger-dropdown">
+            <span>Make a Move</span> <i class="bi bi-chevron-down"></i>
+          </div>
+          <ul>
+            <li><a href="{{url('/donation')}}" wire:navigate>Donate</a></li>
+            <li><a href="{{url('/volunteer')}}" wire:navigate>Volunteer</a></li>
+            <li><a href="{{url('/partner')}}" wire:navigate>Partner</a></li>
+          </ul>
+        </li>
              
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

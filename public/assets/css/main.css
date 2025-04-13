@@ -713,6 +713,36 @@ h6 {
   transform: rotate(180deg);
 }
 
+
+
+/* larger screen drop downa */
+/* Nav text styles only for large screens (1200px and above) */
+@media (min-width: 1200px) {
+  .navmenu a,
+  .navmenu .trigger-dropdown {
+    color: var(--nav-color); /* Set this to white or your preferred color */
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+  }
+
+  .navmenu a:hover,
+  .navmenu a:focus,
+  .navmenu .trigger-dropdown:hover,
+  .navmenu .trigger-dropdown:focus {
+    color: var(--nav-hover-color, #fff); /* Default to white if variable not set */
+  }
+
+  .navmenu .trigger-dropdown i {
+    color: inherit;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/

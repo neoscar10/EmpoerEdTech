@@ -1,4 +1,4 @@
-<div>
+<div >
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
     
@@ -16,19 +16,19 @@
 
 
               <li class="dropdown">
-          <div class="dropdown-toggle trigger-dropdown d-flex align-items-center" style="color: white">
-            <span>Our Goals</span> <i class="bi bi-chevron-down ms-1"></i>
-          </div>
-          <ul>
-            <li><a href="{{url('/digitalEmpowerment')}}" wire:navigate>Digital Empowerment</a></li>
-            <li><a href="{{url('/environmentalSustainability')}}" wire:navigate>Environmental Sustainability</a></li>
-            <li><a href="{{url('/essentialSupport')}}" wire:navigate>Essential Support</a></li>
-          </ul>
-        </li>
+                <div class="dropdown-toggle trigger-dropdown d-flex align-items-center">
+                  <span>Our Goals</span> <i class="bi bi-chevron-down ms-1"></i>
+                </div>
+                <ul>
+                  <li><a href="{{url('/digitalEmpowerment')}}" wire:navigate>Digital Empowerment</a></li>
+                  <li><a href="{{url('/environmentalSustainability')}}" wire:navigate>Environmental Sustainability</a></li>
+                  <li><a href="{{url('/essentialSupport')}}" wire:navigate>Essential Support</a></li>
+                </ul>
+              </li>
 
         <li class="dropdown">
-          <div class="dropdown-toggle trigger-dropdown" style="color: white">
-            <span >Make a Move</span> <i class="bi bi-chevron-down"></i>
+          <div class="dropdown-toggle trigger-dropdown">
+            <span>Make a Move</span> <i class="bi bi-chevron-down"></i>
           </div>
           <ul>
             <li><a href="{{url('/donation')}}" wire:navigate>Donate</a></li>

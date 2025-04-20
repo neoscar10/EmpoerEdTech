@@ -87,7 +87,6 @@
                 </a>
                 </div>
               </div>
-    
             
               <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="service-item item-cyan text-center">
@@ -147,11 +146,59 @@
         </div>
       </div>
     </section><!-- /About Section -->
+
+    <!-- Upcoming Projects Section -->
+    @if ($upcoming_projects->isNotEmpty())
+      <section id="features" class="features section light-background">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Upcoming Projects</h2>
+            <p class="px-5">
+                Explore exciting projects coming up!
+            </p>
+        </div>
     
-        <!-- Projects Section -->
-        <section id="features" class="features section">
+        <div class="container">
+          @foreach($upcoming_projects as $index => $project)
+          <div class="mb-5 p-3 shadow-sm rounded bg-white" data-aos="fade-up">
+            <div class="text-center mb-4">
+              <img src="{{ asset('storage/'.$project->image) }}" 
+                  class="img-fluid rounded shadow-sm"
+                  alt="Project Image"
+                  style="max-width: 100%; height: auto;">
+          </div>
+          
+      
+              <div class="px-2 px-md-4">
+                  <h3>{{ $project->title }}</h3>
+                  <p><small class="text-muted">Posted on {{ $project->created_at->format('d M, Y') }}</small></p>
+                  <p class="fst-italic">{{ $project->description }}</p>
+      
+                  <ul class="list-unstyled">
+                      @foreach ($project->key_points as $kp)
+                          <li class="mb-2">
+                              <i class="bi bi-check2-all text-success me-2"></i>
+                              <span>{{ $kp }}</span>
+                          </li>
+                      @endforeach
+                  </ul>
+      
+                  <p class="mt-3">
+                      <i class="bi bi-link-45deg me-1"></i> 
+                      <span>Click here to <a href="{{ url('/program-registration') }}">register for this program</a></span>
+                  </p>
+              </div>
+          </div>
+      @endforeach
+      
+        </div>
+      </section>
+    @endif
+   
+    
+        <!-- Recent Projects Section -->
+        <section id="features" class="features section ">
           <div class="container section-title" data-aos="fade-up">
-              <h2>Our Projects</h2>
+              <h2>Recent Projects</h2>
               <p class="px-5">
                   Explore EmpowerEdTech Innovations Foundation's impactful projects.
               </p>
@@ -171,6 +218,14 @@
                               <h3>{{ $project->title }}</h3>
                               <p><small>Posted on {{$project->created_at->format('d M, Y')}}</small></p>
                               <p class="fst-italic">{{ $project->description }}</p>
+
+                              
+
+                              <ul>
+                                @foreach ($project->key_points as $kp)
+                                  <li><i class="bi bi-check2-all"></i> <span>{{$kp}}</span></li>
+                                @endforeach
+                              </ul>
                           </div>
                       @else
                           <!-- Image on the Right, Text on the Left -->
@@ -183,12 +238,17 @@
                               <h3>{{ $project->title }}</h3>
                               <p><small>Posted on {{$project->created_at->format('d M, Y')}}</small></p>
                               <p class="fst-italic">{{ $project->description }}</p>
+                              
+
+                              @foreach ($project->key_points as $kp)
+                                  <li>{{$kp}}</li>
+                              @endforeach
                           </div>
                       @endif
                   </div>
               @endforeach
           </div>
-      </section>
+        </section>
       
     
       </main>

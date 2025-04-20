@@ -37,6 +37,22 @@
         </a>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link {{ request()->is('ucoming-projects') ? 'active' : 'collapsed' }}" href="{{ url('upcoming-projects') }}">
+          <i class="bi bi-folder"></i>
+          <span>Upcoming Projects</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link {{ request()->is('participants-list') ? 'active' : 'collapsed' }}" href="{{ url('/participants-list') }}">
+          <i class="bi bi-people"></i>
+          <span>Program Participants</span>
+        </a>
+      </li>
+
+      
+
     </ul>
   </aside>
 </div>
